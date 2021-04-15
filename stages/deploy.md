@@ -4,14 +4,18 @@
 
 ## __Pipeline stage:__  Deploy  
 ### __Stage description:__  
-Insert your description of the stage here  
-
-| Pipeline Stage:<br>Deploy  | Role 1  | Role 2  | Role 3  | Role 4  | Role N  |
-|----------------------------- |-------- |-------- |-------- |-------- |-------- |
-| Task 1                       |         |         |         |         |         |
-| Task 2                       |         |         |         |         |         |
-| Task 3                       |         |         |         |         |         |
-| Task N                       |         |         |         |         |         |
+Insert your description of the stage here
+  
+| Pipeline Stage:<br>Deploy                                      | Developer  | Product Owner  | UX Designer  | Senior Developer          | Lead Dev (6 teams to manage)  |
+|--------------------------------------------------------------- |----------- |--------------- |------------- |-------------------------- |------------------------------ |
+| Local Deployment for internal testing                          | R V        |                |              | A S                       |                               |
+| Version Control - For Rollbacks                                | I          |                | I            | R                         | A S                           |
+| Integration - Works with dependencies in production enviroment | R          |                | R            | A V                       | S                             |
+| Acceptance - All users happy with release for deploy           |            | S              |              | S                         | S                             |
+| Docker/Server Build                                            | R          |                | C            | C V                       | A S                           |
+| Canary Launch to verify stability                              | R          | S C-Feedback   | I V          | A V                       | S                             |
+| Blue-Green/Production Deployment                               | I V        | C S            | I            | R                         | A                             |
+ 
   
   
 [Home](../index.md)  
